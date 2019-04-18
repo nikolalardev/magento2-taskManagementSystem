@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="lardev_task" resource="default" engine="innodb" comment="Lardev Task Table"
+           charset="utf8" collation="utf8_general_ci">
+        <column name="task_id" xsi:type="int" padding="11" unsigned="true" identity="true" comment="Task ID" nullable="false" />
+        <column name="name" xsi:type="varchar" nullable="false" length="124" comment="Task Name" />
+        <column name="description" xsi:type="text" nullable="true" comment="Task Description" />
+        <column name="start_time" xsi:type="timestamp" nullable="true" comment="Task Start Time" />
+        <column name="end_time" xsi:type="timestamp" nullable="true" comment="Task End Time" />
+        <column name="assigned_person" xsi:type="varchar" nullable="false" length="124" comment="Task Assigned Person" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="task_id" />
+        </constraint>
+    </table>
+</schema>

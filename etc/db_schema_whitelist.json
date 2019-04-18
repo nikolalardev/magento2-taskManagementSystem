@@ -1,0 +1,15 @@
+{
+    "lardev_task": {
+        "column": {
+            "task_id": true,
+            "name": true,
+            "description": true,
+            "start_time": true,
+            "end_time": true,
+            "assigned_person": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
