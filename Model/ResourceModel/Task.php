@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Lardev\TaskManagementSystem\Model\Resource;
+namespace Lardev\TaskManagementSystem\Model\ResourceModel;
 
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 

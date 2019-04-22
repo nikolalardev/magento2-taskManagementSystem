@@ -2,7 +2,7 @@
 
 namespace Lardev\TaskManagementSystem\Model;
 
-use Lardev\TaskManagementSystem\Model\Resource\Task as TaskResource;
+use Lardev\TaskManagementSystem\Model\ResourceModel\Task as TaskResource;
 use Magento\Framework\Model\AbstractModel;
 
 class Task extends AbstractModel

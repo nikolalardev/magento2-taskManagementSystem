@@ -2,5 +2,9 @@
 /** @var \Lardev\TaskManagementSystem\ViewModel\TsmPageList $viewModel */
 $viewModel = $block->getData('view_model');
 ?>
-<h1>Hello World</h1>
+<h1>Tasks</h1>
 <h2><?=$viewModel->test();?></h2>
+123
+<?php foreach ($viewModel->getTasks() as $task): ?>
+<h3><?=$task['name'];?></h3>
+<?php endforeach; ?>
